@@ -1,0 +1,223 @@
+@charset "UTF-8";
+
+/* Reset 시작 */
+* {
+	color: #000;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+/* Reset 끝 */
+
+
+/* Guide Line */
+/* div#wrap { border: 1px solid #000; } */
+/* #gnb li a { border: 1px solid #00f; } */
+/* div#adv>* { border: 1px solid #000; }  */
+/* main#main { borde r: 1px solid #000; }   */
+/* Guide Line */
+
+
+/* 공통영역 시작 */
+body {
+	background-image: url(../images/background.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+
+
+div#wrap {
+	width: 400px;
+	border: 1px solid #ccc;
+	margin: 0 auto;
+
+	background-color: #fff;
+}
+/* 공통영역 끝 */
+
+
+/* header#header 시작 */
+#header>div#logoImg {
+	width: 400px;
+	height: 195px;
+	background-image: url(../images/topbg1.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+/* header#header 시작 */
+
+
+/* nav#gnb 시작 */
+nav#gnb {
+	height: 50px;
+	background-color: #c51a3a;
+}
+
+#gnb>ul {
+	padding-left: 54px;
+	list-style: none;
+}
+
+#gnb li {
+	float: left;
+}
+
+#gnb li a {
+	height: 50px;
+	color: #fff;
+	line-height: 48px;
+	font-weight: bold;
+	padding: 0 14px;
+	
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+
+	display: inline-block;
+}
+#gnb li a:hover {
+	color: #c51a3a;
+	font-weight: bold;
+	background-color: #fff;
+}
+/* nav#gnb 끝 */
+
+
+/* div#adv 시작 */
+div#adv {
+	height: 370px;
+	border: 1px solid rgba(0, 0, 0, 0);
+	margin-bottom: 20px;
+
+	background-image: url(../images/shop.png);
+	background-repeat: no-repeat;
+	background-size: 400px 250px;
+}
+div#adv>* {
+	font-size: 17px;
+	font-weight: bold;
+}
+div#adv>h3 {
+	margin-top: 270px;
+	padding: 10px;
+}
+div#adv>p {
+	color: #ec3e09;
+	padding: 0 10px;
+}
+/* div#adv 끝 */
+
+
+/* main#main 시작 */
+main#main {
+	display: flex;
+	flex-wrap: wrap; 
+	/* 기본값(no-wrap); : 하위 플렉스박스 크기를 자동 조절하여
+	               1행에 모두 출력
+		flex-wrap: wrap; => flex는 플렉스 박스를 의미하며
+		                               각 flex-box를 랩으로 감싼 후 
+									   박스의 크기를 지켜준다.
+				   */
+}
+#main>div.info {
+	width: 377px;
+	height: 200px;
+	border: 1px dotted #000;
+	border-radius: 10px;
+	margin: 10px;
+	/* flex: 1; */
+}
+#main>div.info:first-child {
+	height: 150px;
+	border: none;
+}
+#main>div.info:first-child>h3 {
+	color: #fff;
+	padding: 10px;
+	margin: 20px 0;
+
+	background-color: #e76c6e;
+}
+
+#main ul {
+	font-size: 14px;
+	line-height: 22px;
+	padding-left: 20px;
+	list-style: inside square;
+}
+#main ul span:first-child {
+	font-weight: bold;
+}
+
+#main>div.info:not(:first-child) {
+
+	background-repeat: no-repeat;
+	background-size: 170px 200px;
+}
+#main div.info:nth-child(2) {
+	background-image: url(../images/bg1.png);
+}
+#main div.info:nth-child(3) {
+	background-image: url(../images/bg2.png);
+}
+#main div.info:nth-child(4) {
+	background-image: url(../images/bg3.png);
+}
+
+#main div.infoTxt {
+	height: 58px;
+	text-align: right;
+	padding-right: 10px;
+	margin-top: 124px;
+
+	background-color: rgba(255, 255, 255, 0.6);
+}
+#main div.infoTxt h3 {
+	color: #754260;
+	margin-bottom: 10px;
+}
+#main div.infoTxt span {
+	color: #4f77bc;
+	font-weight: bold;
+}
+/* main#main 끝 */
+
+
+/*  footer#footer 시작 */
+footer#footer {
+	text-align: center;
+	padding: 12px;
+	padding-left: 30px;
+	border-top: 1px solid #ccc;
+}
+footer#footer span {
+	font-size: 12px;
+}
+footer#footer span.vBar {
+	
+	color: #888;
+	vertical-align: middle;
+	font-size: 10px;
+	height: 10px;
+	line-height: 10px;
+	padding-bottom: 6px;
+	border: 1px solid #fff;
+	margin-bottom: 6px;
+	display: inline-block;
+}
+/* footer#footer span:last-child {
+	width: 65%;
+	display: inline-block;
+	text-align: right;
+} */
+
+/*  footer#footer 끝 */
+
+
+
+
